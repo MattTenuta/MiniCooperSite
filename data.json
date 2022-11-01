@@ -3,30 +3,37 @@
         "name":"Justin",
         "role":"Coordinator",
         "nickname":"i don't know",
-        "biopic":"justin.jpg"
+        "biopic":"mini-3door.jpg"
     },
     "John": {
         "name":"John",
         "role":"super chill prof",
         "nickname":"just john",
-        "biopic":"john.jpg"
+        "biopic":"mini-5door.jpg"
     },
     "Joe": {
         "name":"Joe",
         "role":"Prof",
         "nickname":"Teddy Bear",
-        "biopic":"joe.jpg"
+        "biopic":"mini-all4.jpg"
     },
     "Jarrod": {
         "name":"Jarrod",
         "role":"Design Superstar",
         "nickname":"Zoolander",
-        "biopic":"jarrod.jpg"
+        "biopic":"mini-convertable.jpg"
     },
     "Trevor": {
         "name":"Trevor",
         "role":"Dark Arts Prof",
         "nickname":"T Dazzle",
-        "biopic":"trevor.jpg"
+        "biopic":"mini-electric.jpg"
+    },
+    "Mini Countryman Hybrid SUV": {
+        "name":"Trevor",
+        "role":"Dark Arts Prof",
+        "nickname":"T Dazzle",
+        "biopic":"mini-suv.jpg"
     }
+
   }

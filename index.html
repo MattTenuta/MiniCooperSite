@@ -5,36 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Mini Cooper Site</title>
 </head>
 <body>
     <header>
         <img>
         <nav>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Shop Now</li>
+                <li>Build & Price</li>
+                <li>Menu</li>
             </ul>
         </nav>
     </header>
     <main id="app"> <!-- Vue will attach itself to this container -->
 
-        <h2> Become A Part Of The Mini Cooper Family! </h2>
+        <div>
+            <img> <!-- Hero Img -->
+        </div>
 
-        <section>
+        <h2> Become A Part Of The Mini Cooper Family! </h2> <!-- Become mini family bar -->
+
+        <section> <!-- Mini Click Section -->
             <div>
                 <section v-for="prof in remoteData">
                     <!-- <pre>{{ prof }}</pre> -->
                     <h2>{{ prof.name }}</h2>
-                    <h2>{{ prof.nickname }}</h2>
-                    <h3>{{ prof.role }}</h3>
+                    <h2>{{ prof.desc }}</h2>
+                    <h3>{{ prof.features }}</h3>
+                    <h3>{{ prof.price }}</h3>
         
                     <img :src='"images/" + prof.biopic' :alt="'prof.name'">
                 </section>
-                <!-- <img>
-                <h3></h3>
-                <h4></h4> -->
             </div>
         </section>
 
@@ -42,13 +44,13 @@
             <!-- Video Here -->
         </div>
         
-        <h1>{{ welcome }}</h1>
+       <!-- <h1>{{ welcome }}</h1>
 
         <h4>{{ name }}</h4>
 
-        <ul>
+             <ul>
             <li v-for="prof in profs">{{ prof }}</li>
-        </ul>
+        </ul> 
 
         <button @click="logClick">Click Me!</button>
 
@@ -56,7 +58,7 @@
             <input v-model="username" type="text" placeholder="username">
             <input v-model="password" type="password" placeholder="password">
             <input @click="sendFormData" type="submit" value="go!">
-        </section>
+        </section> -->
     </main>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

@@ -56,7 +56,15 @@
             </div>
         </section>
 
-        <section> <!-- Mini Click Section -->
+        <nav id="character-nav">
+            <ul class="characters">
+                <!-- hero thumb component goes here -->
+                <theminithumb @loadlbdata="loadLightbox" v-for="data in remoteData" :data="data"></theminithumb> <!-- represents TheHeroThumbnauil.js -->
+
+            </ul>
+        </nav>
+
+        <!-- <section> 
             <div>
                 <section v-for="prof in remoteData">
                     <div>
@@ -69,7 +77,7 @@
                     <img class="miniImg" :src='"images/" + prof.biopic' :alt="'prof.name'">
                 </section>
             </div>
-        </section>
+        </section> -->
 
         <div class="centered hero-image"> <!-- Video -->
             <video controls class="video">

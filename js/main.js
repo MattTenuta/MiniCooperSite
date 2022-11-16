@@ -1,3 +1,6 @@
+import MiniThumb from './components/TheMiniThumbnail';
+import LightBox from './components/TheLightbox.js';
+
 (() => {
     // this imports the Vue library as a variable called Vue
   const { createApp } = Vue
@@ -21,24 +24,21 @@
 
     data() {
       return {
-        welcome: 'Hello Vue!',
-        name: 'Your Name Here',
-
-        profs: ['Joe', 'John', 'Justin', 'Jarrod'],
         remoteData: {},
-        username: '',
-        password: ''
+        lbData: {}
       }
     },
 
-    methods: {
-        logClick() {
-            console.log('clicked!');
-        },
+    components: {
+      theminithumb: MiniThumb,
+      thelightbox: LightBox
+  },
 
-        sendFormData() {
-          console.log(this.username, this.password);
+    methods: {
+      loadLightbox(data) {
+        this.lbData = data;
         }
+        
     }
   }).mount('#app');
 })();

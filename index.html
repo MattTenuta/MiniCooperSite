@@ -26,10 +26,17 @@
 
         <h2> Become A Part Of The Mini Cooper Family! </h2> <!-- Become mini family bar -->
 
-        <section> <!-- Mini Click Section -->
+        <nav id="character-nav">
+            <ul class="characters">
+                <!-- hero thumb component goes here -->
+                <theminithumb @loadlbdata="loadLightbox" v-for="data in remoteData" :data="data"></theminithumb> <!-- represents TheHeroThumbnauil.js -->
+
+            </ul>
+        </nav>
+
+        <!-- <section> 
             <div>
                 <section v-for="prof in remoteData">
-                    <!-- <pre>{{ prof }}</pre> -->
                     <h2>{{ prof.name }}</h2>
                     <h2>{{ prof.desc }}</h2>
                     <h3>{{ prof.features }}</h3>
@@ -38,7 +45,7 @@
                     <img :src='"images/" + prof.biopic' :alt="'prof.name'">
                 </section>
             </div>
-        </section>
+        </section> -->
 
         <div>
             <!-- Video Here -->
